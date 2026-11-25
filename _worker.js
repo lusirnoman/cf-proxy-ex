@@ -1055,7 +1055,6 @@ async function handleRequest(request) {
   if (password != "") {
     if (siteCookie != null && siteCookie != "") {
       var pwd = getCook(passwordCookieName, siteCookie);
-      console.log(pwd);
       if (pwd != null && pwd != "") {
         if (pwd != password) {
           return handleWrongPwd();
